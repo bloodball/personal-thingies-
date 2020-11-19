@@ -1,0 +1,3 @@
+ loadstring(game:HttpGet(“fukin AAAAA",true))()
+ and
+ loadstring(game:GetObjects("UWU")[1].Source)()

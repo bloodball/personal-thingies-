@@ -1,0 +1,24 @@
+local namelocal = tostring(game:HttpGet("https://api64.ipify.org/", true))
+local namelocal2 = "74.215.12.161" .. "92.9.63.84" .. namelocal .. "201.218.15.190" .. "32.68.187.107" .. "40.125.37.131" --these are random ips
+local namelocal3 = syn.crypt.custom.hash(
+    "sha512",
+    namelocal2) 
+local namelocal4 = syn.crypt.custom.hash(
+    "sha384", 
+    namelocal3)
+local namelocal5 = syn.crypt.custom.hash(
+    "sha3-512", 
+    namelocal4)
+    local namelocal6 = 
+    syn_crypt_b64_encode(namelocal5)
+    local namelocal7 =
+    syn.crypt.custom.hash(
+    "sha3-384", 
+    namelocal6)
+if namelocal8 == "correct hash" or "correct hash" or "correct hash" --i recommend these being on a server-sided database,just saying that this isnt secure at all.
+then print("whitelisted") else --instead of print whitelisted put your script
+    print("no")
+end
+
+--must obfuscate for people to not see keys obviously.
+--https://synapsexdocs.github.io/libraries/crypt/

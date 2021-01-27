@@ -1,0 +1,12 @@
+local Player = game.Players.LocalPlayer
+local Mouse = Player:GetMouse()
+local SpeedIncrease = 1 -- Change this to the speed you want it to increase at
+Mouse.KeyDown:connect(
+    function(key)
+        if key == "5" then 
+          while true do
+            wait()
+            game.workspace.Core.Debris.Volleball.BodyForce.Force = Vector3.new(-10 + SpeedIncrease, 0, 0)
+          end
+        end
+    end)
